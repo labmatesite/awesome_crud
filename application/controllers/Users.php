@@ -55,7 +55,15 @@ class Users extends CI_Controller {
 			header('location:'.base_url().$this->index());
 		}
 	}
-}
+
+	public function view($id){
+		$data['data'] = $this->users_model->viewpost($id);
+		$this->load->view('view.php', $data);
+		// echo "<pre>";
+		// print_r($data);
+		}
+	}
+
 
 
 ?>

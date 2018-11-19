@@ -30,7 +30,7 @@
 							<td><?php echo $user->username; ?></td>
 							<td><?php echo $user->password; ?></td>
 							<td><?php echo $user->fname; ?></td>
-							<td><a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $user->id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>index.php/users/delete/<?php echo $user->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
+							<td><a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $user->id; ?>" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a> || <a href="<?php echo base_url(); ?>index.php/users/delete/<?php echo $user->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a> || <a href="<?php echo base_url(); ?>index.php/users/view/<?php echo $user->id; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> View</a></td>
 						</tr>
 						<?php
 					}

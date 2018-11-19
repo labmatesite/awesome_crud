@@ -29,5 +29,10 @@
 			return $this->db->delete('users');
 		}
 
+		public function viewpost($id){
+			$query = $this->db->get_where('users',array('id'=>$id));
+			return $query->row_array();
+		}
+
 	}
 ?>
